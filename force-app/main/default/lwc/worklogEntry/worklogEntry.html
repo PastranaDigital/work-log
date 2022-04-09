@@ -1,0 +1,10 @@
+<template>
+	<div class="wrapper">
+		<h2>Enter Your Work Info</h2>
+		<lightning-input label="Date Worked" type="date" placeholder="" class="slds-p-left_medium slds-p-vertical_small" onchange={handleDateChange}></lightning-input>
+		<lightning-input label="Hours Worked" type="text" placeholder="" class="slds-p-left_medium slds-p-vertical_small" onchange={handleHourChange}></lightning-input>
+		<lightning-combobox label="Project Name" name="Project Name" placeholder="Select a Project" class="slds-p-left_medium slds-p-vertical_small" options={projectOptions} onchange={handleProjectNameChange}></lightning-combobox>
+
+		<lightning-button variant="brand" label="Save Record" title="Save Record" onclick={handleSaveClick} class="slds-m-around_medium slds-align_absolute-center"></lightning-button>
+	</div>
+</template>
